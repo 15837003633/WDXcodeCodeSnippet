@@ -3,6 +3,7 @@ ios代码片段，可用于多台设备的xcode同步代码片段
 
 #### 首次同步
 `git clone git@github.com:15837003633/WDXcodeCodeSnippet.git`
+
 `cd WDXcodeCodeSnippet`
 #### 把xcode的/Users/mac/Library/Developer/Xcode/UserData/CodeSnippets 软链接到 WDXcodeCodeSnippet/CodeSnippets
 `./setup_snippets.sh`
