@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>xlab</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+private lazy var &lt;#label#&gt;: UILabel = {
+    let label = UILabel()
+    label.font = UIFont.kr_font(size: &lt;#size#&gt;)
+    label.numberOfLines = 0
+    label.text = &lt;#"还可以输入350个字"#&gt;
+    label.textColor = UIColor.&lt;#color#&gt;
+    label.textAlignment = .&lt;#center#&gt;
+    return label
+}()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>CF18049B-974D-4076-995A-F005B22BED4A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>懒加载label</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

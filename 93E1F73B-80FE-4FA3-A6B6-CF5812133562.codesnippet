@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>xclassmethod</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - 遍历某个类的方法
+- (void)printClassAllMethod:(Class)cls{
+    NSLog(@"*********************");
+    unsigned int count = 0;
+    Method *methodList = class_copyMethodList(cls, &amp;count);
+    for (int i = 0; i&lt;count; i++) {
+        Method method = methodList[i];
+        SEL sel = method_getName(method);
+        IMP imp = class_getMethodImplementation(cls, sel);
+        NSLog(@"%@-%p",NSStringFromSelector(sel),imp);
+    }
+    free(methodList);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>93E1F73B-80FE-4FA3-A6B6-CF5812133562</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>遍历某个类的方法</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

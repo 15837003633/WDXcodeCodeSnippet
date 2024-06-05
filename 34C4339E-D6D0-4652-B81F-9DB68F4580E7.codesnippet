@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>@av</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>if (@available(&lt;#{i, mac, tv, watch}#&gt;OS &lt;#x.y.z#&gt;, *)) {
+    &lt;#API available statements#&gt;
+} else {
+    &lt;#fallback statements#&gt;
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>34C4339E-D6D0-4652-B81F-9DB68F4580E7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>判断API可用</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>@available</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

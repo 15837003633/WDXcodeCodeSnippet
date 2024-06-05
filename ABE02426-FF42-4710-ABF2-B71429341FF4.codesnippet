@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>xpproperty</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - 遍历某个对象的成员变量
+- (void)printClassAllProperties:(Class)cls{
+    NSLog(@"*********************");
+    unsigned int outCount = 0;
+    objc_property_t *properties  =class_copyPropertyList(cls, &amp;outCount);
+    NSMutableArray *propertiesArray = [NSMutableArray arrayWithCapacity:outCount];
+    for (int i = 0; i&lt;outCount; i++){
+        // objc_property_t 属性类型
+         objc_property_t property = properties[i];
+         // 获取属性的名称 C语言字符串
+         const char *cName = property_getName(property);
+         // 转换为Objective C 字符串
+         NSString *name = [NSString stringWithCString:cName encoding:NSUTF8StringEncoding];
+        [propertiesArray addObject:name];
+        NSLog(@"属性: %@",name);
+     }
+
+    free(properties);
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>ABE02426-FF42-4710-ABF2-B71429341FF4</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>遍历某个对象的成员变量</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

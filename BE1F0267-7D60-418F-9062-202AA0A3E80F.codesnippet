@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>xpclasses</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - 遍历类以及子类
+- (void)printClasses:(Class)cls{
+    
+    // 注册类的总数
+    int count = objc_getClassList(NULL, 0);
+    // 创建一个数组， 其中包含给定对象
+    NSMutableArray *mArray = [NSMutableArray arrayWithObject:cls];
+    // 获取所有已注册的类
+    Class* classes = (Class*)malloc(sizeof(Class)*count);
+    objc_getClassList(classes, count);
+    for (int i = 0; i&lt;count; i++) {
+        if (cls == class_getSuperclass(classes[i])) {
+            [mArray addObject:classes[i]];
+        }
+    }
+    free(classes);
+    NSLog(@"classes = %@", mArray);
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>BE1F0267-7D60-418F-9062-202AA0A3E80F</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>遍历类以及子类</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

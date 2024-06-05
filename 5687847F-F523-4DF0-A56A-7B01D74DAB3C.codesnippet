@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>xpivar</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - 遍历某个对象的成员变量
+- (void)printClassAllIvar:(Class)cls{
+    NSLog(@"*********************");
+    unsigned int outCount = 0;
+    Ivar * ivars = class_copyIvarList(cls, &amp;outCount);
+    for (unsigned int i = 0; i &lt; outCount; i ++) {
+       Ivar ivar = ivars[i];
+       const char * name = ivar_getName(ivar);
+       const char * type = ivar_getTypeEncoding(ivar);
+       NSLog(@"类型为 %s 的 %s ",type, name);
+    }
+    free(ivars);
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>5687847F-F523-4DF0-A56A-7B01D74DAB3C</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>遍历某个对象的成员变量</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
