@@ -1,2 +1,0 @@
-# WDXcodeCodeSnippet
-ios代码片段，可用于多台设备的xcode同步代码片段
