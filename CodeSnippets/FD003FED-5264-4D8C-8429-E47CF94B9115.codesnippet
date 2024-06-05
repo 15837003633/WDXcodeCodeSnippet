@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>#il</string>
+	<string>imagelit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>imageLiteral()</string>
+	<string>#imageLiteral()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>FD003FED-5264-4D8C-8429-E47CF94B9115</string>
 	<key>IDECodeSnippetLanguage</key>

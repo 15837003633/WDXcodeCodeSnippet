@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>#cl</string>
+	<string>colorlit</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>colorLiteral()</string>
+	<string>#colorLiteral()</string>
 	<key>IDECodeSnippetIdentifier</key>
 	<string>0B2C517C-D481-4F71-807D-92330AAB8FF1</string>
 	<key>IDECodeSnippetLanguage</key>
