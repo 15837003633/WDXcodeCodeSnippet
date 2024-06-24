@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>hpreq</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:0];
+if (&lt;#p1#&gt;) params[@"&lt;#p1#&gt;"] = &lt;#p1#&gt;;
+if (&lt;#p2#&gt;) params[@"&lt;#p2#&gt;"] = &lt;#p2#&gt;;
+    @weakify(self)
+[[HPNetworkRequest requestWithPath:&lt;#path#&gt; type:HPNetworkRequestType&lt;#method#&gt; params:params responseClass:&lt;#model#&gt;.class] subscribeNext:^(id  _Nullable x) {
+        @strongify(self)
+        } error:^(NSError * _Nullable error) {
+            @strongify(self)
+        }];</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>851E7987-EA4F-44AC-9F3B-C6FE8454E563</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>HPLive网络请求</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>
