@@ -3,28 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xbtn</string>
+	<string>xracs</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>public lazy var &lt;#btn_name#&gt;: UIButton = {
-        let btn = UIButton(type: .custom)
-    btn.setTitle(&lt;#title#&gt;), for: .normal)
-    btn.setTitleColor(&lt;#color#&gt;), for: .normal)
-    btn.setImage(UIImage(named: &lt;#image_name#&gt;), for: .normal)
-    btn.addTarget(self, action: #selector(&lt;#onClick#&gt;), for: .touchUpInside)
-        return btn
-    }()</string>
+	<string>@strongify(self)</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>1C99B240-E294-4C6C-8CC8-AA68200DB119</string>
+	<string>AF00DE31-B8E3-481B-9202-9517D510C0EE</string>
 	<key>IDECodeSnippetLanguage</key>
-	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
-	<string>swift lazy button</string>
+	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>创建lazy button</string>
+	<string>rac强引用</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
