@@ -3,23 +3,29 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>hpreq</string>
+	<string>hprequest</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
 	<string>NSMutableDictionary *params = [NSMutableDictionary dictionaryWithCapacity:0];
-if (&lt;#p1#&gt;) params[@"&lt;#p1#&gt;"] = &lt;#p1#&gt;;
-if (&lt;#p2#&gt;) params[@"&lt;#p2#&gt;"] = &lt;#p2#&gt;;
-    @weakify(self)
-[[HPNetworkRequest requestWithPath:&lt;#path#&gt; type:HPNetworkRequestType&lt;#method#&gt; params:params responseClass:&lt;#model#&gt;.class] subscribeNext:^(id  _Nullable x) {
-        @strongify(self)
-        } error:^(NSError * _Nullable error) {
-            @strongify(self)
-        }];</string>
+params[@"&lt;#PARAMS#&gt;"] = &lt;#VALUE#&gt;;
+@weakify(self)
+[[HPNetworkRequest requestWithPath:HPNetwork&lt;#PATH#&gt; type:HPNetworkRequestType&lt;#METHOD#&gt; params:params responseClass:&lt;#ClassName#&gt;.class] subscribeNext:^(RACTuple * _Nullable result){
+    @strongify(self)
+    NSError *error = result.second;
+    if (result.first &amp;&amp; !error) {
+        &lt;#ClassName#&gt; * resultObject = (&lt;#ClassName#&gt; *)result.first;
+        &lt;#statements#&gt;
+        if (completion) completion(&lt;#RET#&gt;);
+    } else {
+        &lt;#statements#&gt;
+        if (completion) completion(&lt;#RET#&gt;);
+    }
+}];</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>851E7987-EA4F-44AC-9F3B-C6FE8454E563</string>
+	<string>10CF5BD8-D842-4E21-8C27-3114A7AC378C</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
