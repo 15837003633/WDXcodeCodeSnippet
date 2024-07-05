@@ -3,25 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>xracwrapper</string>
+	<string>fixme</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
 		<string>All</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>        @weakify(self)
-        [[[RACSignal empty] subscribeCompleted:^{
-            @strongify(self)
-            &lt;#you code#&gt;
-        }]dispose];</string>
+	<string>//FIXME: WD &lt;#description#&gt;</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>F0FE3565-06A0-402E-8003-DBE3D822E762</string>
+	<string>4542DAC9-91AF-44BD-889E-60AF9127FAD5</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetSummary</key>
 	<string></string>
 	<key>IDECodeSnippetTitle</key>
-	<string>RAC包装器</string>
+	<string>FIXME 标签</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
